@@ -5,7 +5,6 @@ import Error from "../../components/UI/Error";
 
 export default function Categories() {
   const { data: categories, isLoading, isError } = useCategories();
-  console.log('categories:', categories);
   const updateCategory = useUpdateCategoryRate();
   const [editing, setEditing] = useState<{ [key: string]: number }>({});
 

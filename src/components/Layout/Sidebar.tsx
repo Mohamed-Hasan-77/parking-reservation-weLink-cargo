@@ -26,16 +26,6 @@ export default function Sidebar({
             Zones
           </NavLink>
           <NavLink
-            to="/dashboard/tickets"
-            className={({ isActive }: { isActive: boolean }) =>
-              `btn btn-ghost justify-start mt-2  rounded-lg ${
-                isActive ? " bg-white shadow" : ""
-              }`
-            }
-          >
-            Tickets
-          </NavLink>
-          <NavLink
             to="/dashboard/subscriptions"
             className={({ isActive }: { isActive: boolean }) =>
               `btn btn-ghost justify-start mt-2  rounded-lg ${
@@ -100,13 +90,6 @@ export default function Sidebar({
             onClick={() => setOpen(false)}
           >
             Zones
-          </NavLink>
-          <NavLink
-            to="/dashboard/tickets"
-            className="btn btn-ghost justify-start "
-            onClick={() => setOpen(false)}
-          >
-            Tickets
           </NavLink>
           <NavLink
             to="/dashboard/subscriptions"
